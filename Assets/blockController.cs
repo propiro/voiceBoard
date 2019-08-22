@@ -10,7 +10,7 @@ public class blockController : MonoBehaviour {
     public TextMesh blockText;
     public AudioSource playAudio;
     public float speed = 0.3f;
-    public Material blinkMaterial;
+   // public Material blinkMaterial;
     private Color blinkColor;
     private float blinkAlpha = 0f;
     private float blinkAlphaMax = 0.5f;
@@ -33,50 +33,19 @@ public class blockController : MonoBehaviour {
     private void OnMouseDown()
     {
         playAudio.Play(0);
-        blink();
+       
     }
 
-    void blink()
-    {
-        if (!blinking)
-        {
-            blinkColor = blinkMaterial.color;
-
-
-
-
-            blinking = true;
-
-
-            /*
-             
-             void FadeIn()
-{
-    renderer.material.color = new Color(1, 1, 1, Mathf.Lerp(0, 1, FadeTime));
-    if (FadeTime > 1)
-    {
-        FadingIn = false;
-    }
-}
-    void FadeOut()
-{
-    renderer.material.color = new Color(1, 1, 1, Mathf.Lerp(1, 0, FadeTime));
-    if (FadeTime > 1)
-    {
-        FadingOut = false;
-    }
-}
+   
          
          
          
          
          
-         */
-
 
 
 
         }
 
-    }
-}
+    
+
